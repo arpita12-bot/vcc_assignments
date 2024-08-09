@@ -1,11 +1,13 @@
 Job Application App on Google Cloud Platform(GCP)
 -
 This project demonstrates the deployment of a PHP web application on GCP Platform.
+
 Features:
 * Allow users to register with professional details.
 * View updated details
 * MySql database: storing registered data
-##Requirements:
+  
+Requirements:
 - Account on GCP(VM instance)
 - Web server(ex-Apache2...)
 - PHP 8.4 package/modules
@@ -28,40 +30,40 @@ Features:
 ### VM1:
 - Installation of web server(ex- Apache2 on VM1)
 ```bash
-- sudo apt update
-- sudo apt install apache2 -y
-- sudo systemctl start apache2
-- sudo systemctl enable apache2
+	- sudo apt update
+	- sudo apt install apache2 -y
+	- sudo systemctl start apache2
+	- sudo systemctl enable apache2
 ```
 - Installation of necessary PHP modules
 ```bash
-sudo apt install php libapache2-mod-php php-mysql -y
+	- sudo apt install php libapache2-mod-php php-mysql -y
 ```
 - Restart apache to load PHP modules
 ```bash
-sudo systemctl restart apache2
+	- sudo systemctl restart apache2
 ```
 - Develop PHP application on VM1
 ```bash
-sudo nano /var/www/html/newproject.php
+	- sudo nano /var/www/html/newproject.php
 ```
 simple php script to insert records into the mysql database
 
 ###VM2:
 - Installation of MySQL database on VM2
 ```bash
-sudo apt update
-sudo apt install mysql-server -y
-sudo systemctl start mysql
-sudo systemctl enable mysql
+	- sudo apt update
+	- sudo apt install mysql-server -y
+	- sudo systemctl start mysql
+	- sudo systemctl enable mysql
 ```
 - secure Installation
 ```bash
-sudo mysql_secure_installation
+	- sudo mysql_secure_installation
 ```
 - Create database user with password
 ```bash
-sudo mysql -u root -p
+	- sudo mysql -u root -p
 ```
 - Create Database and table
 ```bash
@@ -89,22 +91,22 @@ CREATE TABLE job_applied(
 ###VM3:
 - Installation of web server and NoMachine remote desktop s/w on VM3
 ```bash
-sudo apt update
-sudo apt install apache2 -y
-sudo systemctl start apache2
-sudo systemctl enable apache2
+	- sudo apt update
+	- sudo apt install apache2 -y
+	- sudo systemctl start apache2
+	- sudo systemctl enable apache2
 ```
 ```bash
 wget https://download.nomachine.com/download/8.13/Linux/nomachine_8.13.1_1_amd64.deb
 
-sudo apt install ./nomachine_8.13.1_1_amd64.deb
+	- sudo apt install ./nomachine_8.13.1_1_amd64.deb
 ```
 switch to root user and set user for administrative privileges
 ```bash
-sudo -s
-passwd
-adduser arpita
-usermod -a -G sudo sdm arpita
+	- sudo -s
+	- passwd
+	- adduser arpita
+	- usermod -a -G sudo sdm arpita
 ```
 ###Step-4: VPC Setup : Firewall rules Setup
 ###allow-mysql Firewall rule Creation
@@ -119,8 +121,8 @@ usermod -a -G sudo sdm arpita
 - Install the Ubuntu desktop on VM3
 - Reboot VM3
 ```bash
-sudo apt-get install ubuntu-desktop
-sudo reboot
+	- sudo apt-get install ubuntu-desktop
+	- sudo reboot
 ```
 - download nomachine app on host system to access VM3 
 - We are using noMachine remote desktop software in order to run our vm-g23ai2082-3 ubuntu desktop features on local machine with GUI support and NoMachine allows us to access and control the vm3 remotely over a network.
