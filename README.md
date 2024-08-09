@@ -21,15 +21,16 @@ Requirements:
 - Account on GCP(Google cloud Platform)
 - Knowledge on GCP
   
-###Steps:
+##Steps:
 
-###Step-1: Creation of GCP Account
+Step-1: Creation of GCP Account
 - Creating account on GCP(iitj.ac.in)
 - Creating new project on GCP account with organisation(IITJ)
   
-###Step-2: Creation and Configuration of VM instance
+Step-2: Creation and Configuration of VM instance
 - Creation of 3vms named as vm-g23ai2082-1, vm-g23ai2082-2, vm-g23ai2082-3 on top of VM instance of GCP
-###step-3: Installation on Virtual machine instances
+
+Step-3: Installation on Virtual machine instances
 ### VM1:
 - Installation of web server(ex- Apache2 on VM1)
 ```bash
@@ -52,7 +53,7 @@ Requirements:
 ```
 simple php script to insert records into the mysql database
 
-###VM2:
+##VM2:
 - Installation of MySQL database on VM2
 ```bash
 	- sudo apt update
@@ -91,7 +92,7 @@ CREATE TABLE job_applied(
     PRIMARY KEY(id)
 );
 ```
-###VM3:
+##VM3:
 - Installation of web server and NoMachine remote desktop s/w on VM3
 ```bash
 	- sudo apt update
@@ -111,15 +112,15 @@ switch to root user and set user for administrative privileges
 	- adduser arpita
 	- usermod -a -G sudo sdm arpita
 ```
-###Step-4: VPC Setup : Firewall rules Setup
-###allow-mysql Firewall rule Creation
+Step-4: VPC Setup : Firewall rules Setup
+##allow-mysql Firewall rule Creation
 - create a firewall rules to enable access for mysql server and web server on virtual machines and providing proxy system for internal HTTP load-balancing.
 - This firewall enables the tcp:3306 port which enables the python web server to connect to mysql server
 
-###Step-5: Accessing PHP Application on host machine
+Step-5: Accessing PHP Application on host machine
 - Accessibility of the webserver on local machine (host machine) and the ability to dynamically query the database entity as well add any new records to the selected tables using external IP of VM1.
 
-###Step-6: Accessing web application on VM3 with nomachine s/w
+Step-6: Accessing web application on VM3 with nomachine s/w
 - In order to get GUI and browser access in vm3 instance we are installing Ubuntu desktop on top of vm-g23ai2082-3 (vm3).
 - Install the Ubuntu desktop on VM3
 - Reboot VM3
@@ -131,7 +132,7 @@ switch to root user and set user for administrative privileges
 - We are using noMachine remote desktop software in order to run our vm-g23ai2082-3 ubuntu desktop features on local machine with GUI support and NoMachine allows us to access and control the vm3 remotely over a network.
 
 
-###newproject.php
+##newproject.php
 ```bash
 <!DOCTYPE html>
 <html lang="en">
