@@ -53,7 +53,7 @@ Step-3: Installation on Virtual machine instances
 ```
 simple php script to insert records into the mysql database
 
-##VM2:
+VM2:
 - Installation of MySQL database on VM2
 ```bash
 	- sudo apt update
@@ -92,7 +92,7 @@ CREATE TABLE job_applied(
     PRIMARY KEY(id)
 );
 ```
-##VM3:
+VM3:
 - Installation of web server and NoMachine remote desktop s/w on VM3
 ```bash
 	- sudo apt update
@@ -113,7 +113,7 @@ switch to root user and set user for administrative privileges
 	- usermod -a -G sudo sdm arpita
 ```
 Step-4: VPC Setup : Firewall rules Setup
-##allow-mysql Firewall rule Creation
++ allow-mysql Firewall rule Creation
 - create a firewall rules to enable access for mysql server and web server on virtual machines and providing proxy system for internal HTTP load-balancing.
 - This firewall enables the tcp:3306 port which enables the python web server to connect to mysql server
 
@@ -132,7 +132,7 @@ Step-6: Accessing web application on VM3 with nomachine s/w
 - We are using noMachine remote desktop software in order to run our vm-g23ai2082-3 ubuntu desktop features on local machine with GUI support and NoMachine allows us to access and control the vm3 remotely over a network.
 
 
-##newproject.php
+newproject.php
 ```bash
 <!DOCTYPE html>
 <html lang="en">
