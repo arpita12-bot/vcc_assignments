@@ -1,0 +1,13 @@
+|| Virtualization Cloud Computing || Assignment-02 || 
+------------------------------------------------------
+//******************************************Virtual Machine Configuration and Application Deployment on GCP***************************************//
++ Create 3 virtual machines using any Linux version with any hypervisor and name them VM_RollNumber_1, VM_RollNumber_2, VM_RollNumber_3 respectively.
+	* VM_RollNumber_1: Install any web-server
+	* VM_RollNumber_2: Install any database
++ Create a dummy web application to insert a data record in the database and display it.
++ Demonstrate that the web application is accessible from VM_RollNumber_3 and the host system web browser.
+
++ A screen-recording of:
+	* Showing the network configuration of all the VMs.
+	* Accessing web-application from VM_RollNumber_3
+	* Accessing web-application from the host application
