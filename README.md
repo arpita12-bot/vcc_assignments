@@ -20,10 +20,13 @@ Requirements:
 - A system(laptop/computer)
 - Account on GCP(Google cloud Platform)
 - Knowledge on GCP
+  
 ###Steps:
+
 ###Step-1: Creation of GCP Account
 - Creating account on GCP(iitj.ac.in)
 - Creating new project on GCP account with organisation(IITJ)
+  
 ###Step-2: Creation and Configuration of VM instance
 - Creation of 3vms named as vm-g23ai2082-1, vm-g23ai2082-2, vm-g23ai2082-3 on top of VM instance of GCP
 ###step-3: Installation on Virtual machine instances
