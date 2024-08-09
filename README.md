@@ -1,7 +1,7 @@
-#Job Application App on Google Cloud Platform(GCP)
+Job Application App on Google Cloud Platform(GCP)
 -
 This project demonstrates the deployment of a PHP web application on GCP Platform.
-##Features:
+Features:
 * Allow users to register with professional details.
 * View updated details
 * MySql database: storing registered data
@@ -28,10 +28,10 @@ This project demonstrates the deployment of a PHP web application on GCP Platfor
 ### VM1:
 - Installation of web server(ex- Apache2 on VM1)
 ```bash
-sudo apt update
-sudo apt install apache2 -y
-sudo systemctl start apache2
-sudo systemctl enable apache2
+- sudo apt update
+- sudo apt install apache2 -y
+- sudo systemctl start apache2
+- sudo systemctl enable apache2
 ```
 - Installation of necessary PHP modules
 ```bash
