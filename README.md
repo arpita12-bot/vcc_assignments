@@ -1,4 +1,4 @@
-Job Application App on Google Cloud Platform(GCP)
+PHP Job App on Google Cloud Platform(GCP)
 -
 This project demonstrates the deployment of a PHP web application on GCP Platform.
 
