@@ -118,6 +118,7 @@ switch to root user and set user for administrative privileges
 Step-4: VPC Setup : Firewall rules Setup
 -----------------------------------------
 Allow-mysql Firewall rule Creation:
+
 	- Create a firewall rules to enable access for mysql server and web server on virtual machines and providing proxy system for internal HTTP load-balancing.
 	- This firewall enables the tcp:3306 port which enables the python web server to connect to mysql server.
 
